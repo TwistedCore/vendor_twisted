@@ -27,11 +27,6 @@ PRODUCT_PACKAGES += \
 #    vendor/twisted/prebuilt/common/app/Nova.apk:system/app/Nova/Nova.apk \
 #    vendor/twisted/prebuilt/common/lib/libgif.so:system/app/Nova/lib/arm/libgif.so
 
-# Screen recorder package and lib
-PRODUCT_PACKAGES += \
-    ScreenRecorder \
-    libscreenrecorder
-
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/twisted/overlay/common
