@@ -13,6 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
+    drm.service.enabled=true \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
@@ -46,7 +47,7 @@ PRODUCT_COPY_FILES +=  \
 
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/twisted/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/twisted/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Extra packages
 PRODUCT_PACKAGES += \
@@ -64,6 +65,7 @@ PRODUCT_COPY_FILES += \
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/twisted/prebuilt/addon.d/50-twisted.sh:system/addon.d/50-twisted.sh \
+    vendor/twisted/prebuilt/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/twisted/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/twisted/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/twisted/prebuilt/etc/backup.conf:system/etc/backup.conf

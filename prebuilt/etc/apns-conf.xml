@@ -63,6 +63,7 @@
       mtu="1422"
   />
 
+  <!-- bearer 13, 14 -->
   <apn carrier="Test 800"
       mcc="001"
       mnc="01"
@@ -70,19 +71,10 @@
       type="vzw800"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13|14"
   />
 
-  <apn carrier="Test 800"
-      mcc="001"
-      mnc="01"
-      apn="VZW800"
-      type="vzw800"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
-  />
-
+  <!-- bearer 13, 14 -->
   <apn carrier="Test FOTA"
       mcc="001"
       mnc="01"
@@ -90,27 +82,14 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13|14"
       profile_id="3"
       modem_cognitive="true"
       max_conns="1023"
       max_conns_time="300"
   />
 
-  <apn carrier="Test FOTA"
-      mcc="001"
-      mnc="01"
-      apn="VZWADMIN"
-      type="fota"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
-      profile_id="3"
-      modem_cognitive="true"
-      max_conns="1023"
-      max_conns_time="300"
-  />
-
+  <!-- bearer 13, 14 -->
   <apn carrier="Test CBS"
       mcc="001"
       mnc="01"
@@ -118,27 +97,14 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13|14"
       profile_id="4"
       modem_cognitive="true"
       max_conns="1023"
       max_conns_time="300"
   />
 
-  <apn carrier="Test CBS"
-      mcc="001"
-      mnc="01"
-      apn="VZWAPP"
-      type="cbs,mms"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
-      profile_id="4"
-      modem_cognitive="true"
-      max_conns="1023"
-      max_conns_time="300"
-  />
-
+  <!-- bearer 13, 14 -->
   <apn carrier="Test IMS"
       mcc="001"
       mnc="01"
@@ -146,21 +112,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
-      profile_id="2"
-      modem_cognitive="true"
-      max_conns="1023"
-      max_conns_time="300"
-  />
-
-  <apn carrier="Test IMS"
-      mcc="001"
-      mnc="01"
-      apn="VZWIMS"
-      type="ims,ia"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="13|14"
       profile_id="2"
       modem_cognitive="true"
       max_conns="1023"
@@ -177,9 +129,10 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
       authtype="3"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
+  <!-- bearer 13, 14 -->
   <apn carrier="Test Internet"
       mcc="001"
       mnc="01"
@@ -188,28 +141,14 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13|14"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
       max_conns_time="300"
   />
 
-  <apn carrier="Test Internet"
-      mcc="001"
-      mnc="01"
-      apn="VZWINTERNET"
-      mmsc="http://mms.vtext.com/servlets/mms"
-      type="default,dun"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
-      profile_id="0"
-      modem_cognitive="true"
-      max_conns="1023"
-      max_conns_time="300"
-  />
-
+  <!-- bearer 13, 14 -->
   <apn carrier="Test 800"
       mcc="001"
       mnc="010"
@@ -217,19 +156,10 @@
       type="vzw800"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13|14"
   />
 
-  <apn carrier="Test 800"
-      mcc="001"
-      mnc="010"
-      apn="VZW800"
-      type="vzw800"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
-  />
-
+   <!-- bearer 13, 14 -->
   <apn carrier="Test FOTA"
       mcc="001"
       mnc="010"
@@ -237,27 +167,14 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13|14"
       profile_id="3"
       modem_cognitive="true"
       max_conns="1023"
       max_conns_time="300"
   />
 
-  <apn carrier="Test FOTA"
-      mcc="001"
-      mnc="010"
-      apn="VZWADMIN"
-      type="fota"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
-      profile_id="3"
-      modem_cognitive="true"
-      max_conns="1023"
-      max_conns_time="300"
-  />
-
+  <!-- bearer 13, 14 -->
   <apn carrier="Test CBS"
       mcc="001"
       mnc="010"
@@ -265,21 +182,7 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
-      profile_id="4"
-      modem_cognitive="true"
-      max_conns="1023"
-      max_conns_time="300"
-  />
-
-  <apn carrier="Test CBS"
-      mcc="001"
-      mnc="010"
-      apn="VZWAPP"
-      type="cbs,mms"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="13|14"
       profile_id="4"
       modem_cognitive="true"
       max_conns="1023"
@@ -293,7 +196,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="2"
       modem_cognitive="true"
       max_conns="1023"
@@ -307,7 +210,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="2"
       modem_cognitive="true"
       max_conns="1023"
@@ -324,7 +227,7 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
       authtype="3"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Test Internet"
@@ -335,7 +238,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -350,7 +253,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -451,6 +354,18 @@
       mmsport="8080"
       type="default,supl,mms"
   />
+  
+  <apn carrier="MVNO NL"
+     mcc="204"
+     mnc="03"
+     apn="internet.mvno.mobi"
+     user="mvno"
+     password="mvno"
+     authtype="1"
+     type="default,supl"
+     mvno_match_data="20403"
+     mvno_type="imsi"
+  />
 
   <apn carrier="Truphone"
       mcc="204"
@@ -490,7 +405,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mvno_type="gid"
       mvno_match_data="BAE0000000000000"
       profile_id="0"
@@ -521,7 +436,7 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mvno_type="gid"
       mvno_match_data="BAE0000000000000"
       profile_id="3"
@@ -567,7 +482,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mvno_type="gid"
       mvno_match_data="BAE0000000000000"
       profile_id="2"
@@ -600,7 +515,7 @@
       mmsc="http://mms.vtext.com/servlets/mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mvno_type="gid"
       mvno_match_data="BAE0000000000000"
       profile_id="4"
@@ -672,6 +587,18 @@
       mmsproxy="10.10.100.20"
       mmsport="5080"
       type="default,supl,mms"
+  />
+
+  <apn carrier="MVNO NL"
+     mcc="204"
+     mnc="08"
+     apn="internet.mvno.mobi"
+     user="mvno"
+     password="mvno"
+     authtype="1"
+     type="default,supl"
+     mvno_match_data="204080950"
+     mvno_type="imsi"
   />
 
   <apn carrier="Rabo Mobiel Int."
@@ -1508,6 +1435,21 @@
       mnc="15"
       mmsc="http://mms.free.fr"
       apn="mmsfree"
+      type="mms"
+  />
+
+  <apn carrier="Legos"
+      mcc="208"
+      mnc="17"
+      apn="bornsip"
+      type="default,supl"
+  />
+
+  <apn carrier="Legos MMS"
+      mcc="208"
+      mnc="17"
+      mmsc="http://mms.bornsip.fr:8191"
+      apn="bornsipmms"
       type="mms"
   />
 
@@ -2480,6 +2422,13 @@
       mmsport="80"
       mvno_match_data="5A"
       mvno_type="gid"
+  />
+
+  <apn carrier="agms"
+      mcc="204"
+      mnc="65"
+      apn="agms"
+      type="default,supl"
   />
 
   <apn carrier="Vip GPRS"
@@ -4922,7 +4871,7 @@
       type="vzw800"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Test 800"
@@ -4932,7 +4881,7 @@
       type="vzw800"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Test FOTA"
@@ -4942,7 +4891,7 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Test FOTA"
@@ -4952,7 +4901,7 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Test CBS"
@@ -4962,7 +4911,7 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Test CBS"
@@ -4972,7 +4921,7 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Test IMS"
@@ -4982,7 +4931,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Test IMS"
@@ -4992,7 +4941,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Test Internet"
@@ -5005,7 +4954,7 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
       authtype="3"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Test Internet"
@@ -5016,7 +4965,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -5031,7 +4980,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -5045,7 +4994,7 @@
       type="vzw800"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Test 800"
@@ -5055,7 +5004,7 @@
       type="vzw800"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Test FOTA"
@@ -5065,7 +5014,7 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="3"
       modem_cognitive="true"
       max_conns="1023"
@@ -5079,7 +5028,7 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="3"
       modem_cognitive="true"
       max_conns="1023"
@@ -5093,7 +5042,7 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="4"
       modem_cognitive="true"
       max_conns="1023"
@@ -5107,7 +5056,7 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="4"
       modem_cognitive="true"
       max_conns="1023"
@@ -5121,7 +5070,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="2"
       modem_cognitive="true"
       max_conns="1023"
@@ -5135,7 +5084,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="2"
       modem_cognitive="true"
       max_conns="1023"
@@ -5152,7 +5101,7 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
       authtype="3"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Test Internet"
@@ -5163,7 +5112,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -5178,7 +5127,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -5882,7 +5831,7 @@
       type="default,supl"
   />
 
-  <apn carrier="E-Plus Web GPRS"
+  <apn carrier="E-Plus Internet"
       mcc="262"
       mnc="03"
       apn="internet.eplus.de"
@@ -5941,15 +5890,39 @@
       mvno_match_data="Alice"
   />
 
-  <apn carrier="Fonic"
+  <apn carrier="Fonic Prepaid"
       mcc="262"
       mnc="07"
-      apn="pinternet.interkom.net"
-      authtype="0"
+      apn="pinternet.interkom.de"
       mmsc="http://10.81.0.7:8002"
       mmsproxy="82.113.100.6"
       mmsport="8080"
+      type="default,supl,mms"
       mvno_match_data="26207515"
+      mvno_type="imsi"
+  />
+
+  <apn carrier="Lidl Mobile"
+      mcc="262"
+      mnc="07"
+      apn="pinternet.interkom.de"
+      mmsc="http://10.81.0.7:8002"
+      mmsproxy="82.113.100.6"
+      mmsport="8080"
+      type="default,supl,mms"
+      mvno_match_data="26207520"
+      mvno_type="imsi"
+  />
+
+  <apn carrier="Tchibo Internet"
+      mcc="262"
+      mnc="07"
+      apn="webmobil1"
+      mmsc="http://10.81.0.7:8002"
+      mmsproxy="82.113.100.8"
+      mmsport="8080"
+      type="default,supl,mms"
+      mvno_match_data="26207500"
       mvno_type="imsi"
   />
 
@@ -7027,6 +7000,16 @@
       mmsport="80"
   />
 
+  <apn carrier="Verizon CDMA HRPD"
+     mcc="310"
+     mnc="000"
+     mmsc="http://mms.vzwreseller.com/servlets/mms"
+     type="default,mms,hipri,dun,supl"
+     mvno_type="spn"
+     mvno_match_data="Tracfone"
+     authtype="3"
+  />
+
   <apn carrier="Bluewire"
       mcc="310"
       mnc="000"
@@ -7040,7 +7023,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Bluewire IMS"
@@ -7052,7 +7035,7 @@
       mvno_match_data="bluewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Bluewire IMS"
@@ -7064,7 +7047,7 @@
       mvno_match_data="bluewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Bluewire FOTA"
@@ -7076,7 +7059,7 @@
       mvno_match_data="bluewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Bluewire FOTA"
@@ -7088,7 +7071,7 @@
       mvno_match_data="bluewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Bluewire"
@@ -7103,7 +7086,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Bluewire"
@@ -7118,7 +7101,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="flatwire"
@@ -7134,7 +7117,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Flatwire IMS"
@@ -7146,7 +7129,7 @@
       mvno_match_data="flatwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Flatwire IMS"
@@ -7158,7 +7141,7 @@
       mvno_match_data="flatwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Flatwire FOTA"
@@ -7170,7 +7153,7 @@
       mvno_match_data="flatwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Flatwire FOTA"
@@ -7182,7 +7165,7 @@
       mvno_match_data="flatwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Flatwire"
@@ -7197,7 +7180,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Flatwire"
@@ -7212,7 +7195,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="mobipcs"
@@ -7228,7 +7211,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Mobipcs IMS"
@@ -7240,7 +7223,7 @@
       mvno_match_data="mobipcs"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mobipcs IMS"
@@ -7252,7 +7235,7 @@
       mvno_match_data="mobipcs"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mobipcs FOTA"
@@ -7264,7 +7247,7 @@
       mvno_match_data="mobipcs"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mobipcs FOTA"
@@ -7276,7 +7259,7 @@
       mvno_match_data="mobipcs"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mobipcs"
@@ -7291,7 +7274,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mobipcs"
@@ -7306,7 +7289,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="mobilenation"
@@ -7322,7 +7305,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Mobilenation IMS"
@@ -7334,7 +7317,7 @@
       mvno_match_data="mobilenation"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mobilenation IMS"
@@ -7346,7 +7329,7 @@
       mvno_match_data="mobilenation"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mobilenation FOTA"
@@ -7358,7 +7341,7 @@
       mvno_match_data="mobilenation"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mobilenation FOTA"
@@ -7370,7 +7353,7 @@
       mvno_match_data="mobilenation"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mobilenation"
@@ -7385,7 +7368,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mobilenation"
@@ -7400,7 +7383,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="mohave"
@@ -7416,7 +7399,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Mohave IMS"
@@ -7428,7 +7411,7 @@
       mvno_match_data="mohave"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mohave IMS"
@@ -7440,7 +7423,7 @@
       mvno_match_data="mohave"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mohave FOTA"
@@ -7452,7 +7435,7 @@
       mvno_match_data="mohave"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mohave FOTA"
@@ -7464,7 +7447,7 @@
       mvno_match_data="mohave"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mohave"
@@ -7479,7 +7462,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mohave"
@@ -7494,7 +7477,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="peopleswire"
@@ -7510,7 +7493,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Peopleswire IMS"
@@ -7522,7 +7505,7 @@
       mvno_match_data="Peopleswire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Peopleswire IMS"
@@ -7534,7 +7517,7 @@
       mvno_match_data="Peopleswire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="peopleswire FOTA"
@@ -7546,7 +7529,7 @@
       mvno_match_data="peopleswire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="peopleswire FOTA"
@@ -7558,7 +7541,7 @@
       mvno_match_data="peopleswire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Peopleswire"
@@ -7573,7 +7556,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Peopleswire"
@@ -7588,7 +7571,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="revol"
@@ -7604,7 +7587,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Revol IMS"
@@ -7616,7 +7599,7 @@
       mvno_match_data="revol"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Revol IMS"
@@ -7628,7 +7611,7 @@
       mvno_match_data="revol"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Revol FOTA"
@@ -7640,7 +7623,7 @@
       mvno_match_data="revol"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Revol FOTA"
@@ -7652,7 +7635,7 @@
       mvno_match_data="revol"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Revol"
@@ -7667,7 +7650,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Revol"
@@ -7682,7 +7665,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Commnet"
@@ -7698,7 +7681,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="distribution"
@@ -7714,7 +7697,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Distribution IMS"
@@ -7726,7 +7709,7 @@
       mvno_match_data="distribution"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Distribution IMS"
@@ -7738,7 +7721,7 @@
       mvno_match_data="distribution"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Distribution FOTA"
@@ -7750,7 +7733,7 @@
       mvno_match_data="distribution"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Distribution FOTA"
@@ -7762,7 +7745,7 @@
       mvno_match_data="distribution"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Distribution"
@@ -7777,7 +7760,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Distribution"
@@ -7792,7 +7775,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Union Wireless Data"
@@ -7818,7 +7801,90 @@
   <!-- and a second APN to be used when DUN is required.  Even though the -->
   <!-- parameters appear the same, the profileID sent to the radio when requesting -->
   <!-- a DUN connection will be different -->
-  <!-- IS95A - CDMA -->
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Verizon"
+      mcc="310"
+      mnc="004"
+      apn="internet"
+      authtype="3"
+      type="default,mms,supl,fota,ims,cbs"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      protocol="IPV4V6"
+      bearer_bitmask="4|5|6|7|8|12"
+  />
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Verizon"
+      mcc="310"
+      mnc="004"
+      apn="internet"
+      authtype="3"
+      type="default,mms,supl,fota,ims,cbs,dun"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      protocol="IPV4V6"
+      bearer_bitmask="4|5|6|7|8|12"
+      profile_id="1"
+  />
+
+  <!-- bearer 13, 14 -->
+  <apn carrier="Verizon Internet"
+      mcc="310"
+      mnc="004"
+      apn="VZWINTERNET"
+      type="default,dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="13|14"
+      profile_id="0"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
+
+  <!-- bearer 13, 14 -->
+  <apn carrier="Verizon FOTA"
+      mcc="310"
+      mnc="004"
+      apn="VZWADMIN"
+      type="fota"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="13|14"
+      profile_id="3"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
+
+  <!-- bearer 13, 14 -->
+  <apn carrier="Verizon IMS"
+      mcc="310"
+      mnc="004"
+      apn="VZWIMS"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="13|14"
+      profile_id="2"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
+
+  <!-- bearer 13, 14 -->
+  <apn carrier="Verizon CBS"
+      mcc="310"
+      mnc="004"
+      apn="VZWAPP"
+      type="cbs,mms"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="13|14"
+      profile_id="4"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
 
   <apn carrier=" ALU Test-SIM Internet"
       mcc="310"
@@ -7890,7 +7956,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Itewire IMS"
@@ -7902,7 +7968,7 @@
       mvno_match_data="itewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Itewire IMS"
@@ -7914,7 +7980,7 @@
       mvno_match_data="itewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Itewire FOTA"
@@ -7926,7 +7992,7 @@
       mvno_match_data="itewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Itewire FOTA"
@@ -7938,7 +8004,7 @@
       mvno_match_data="itewire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Itewire"
@@ -7953,7 +8019,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Itewire"
@@ -7968,7 +8034,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="etex"
@@ -7984,7 +8050,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Etex IMS"
@@ -7996,7 +8062,7 @@
       mvno_match_data="etex"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Etex IMS"
@@ -8008,7 +8074,7 @@
       mvno_match_data="etex"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Etex FOTA"
@@ -8020,7 +8086,7 @@
       mvno_match_data="etex"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Etex FOTA"
@@ -8032,7 +8098,7 @@
       mvno_match_data="etex"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Etex"
@@ -8047,7 +8113,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Etex"
@@ -8062,7 +8128,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="mta"
@@ -8078,7 +8144,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Mta IMS"
@@ -8090,7 +8156,7 @@
       mvno_match_data="mta"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mta IMS"
@@ -8102,7 +8168,7 @@
       mvno_match_data="mta"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mta FOTA"
@@ -8114,7 +8180,7 @@
       mvno_match_data="mta"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mta FOTA"
@@ -8126,7 +8192,7 @@
       mvno_match_data="mta"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Mta"
@@ -8141,7 +8207,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Mta"
@@ -8156,7 +8222,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="alaskacomm"
@@ -8172,7 +8238,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Alaskacomm IMS"
@@ -8184,7 +8250,7 @@
       mvno_match_data="alaskacomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Alaskacomm IMS"
@@ -8196,7 +8262,7 @@
       mvno_match_data="alaskacomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Alaskacomm FOTA"
@@ -8208,7 +8274,7 @@
       mvno_match_data="alaskacomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Alaskacomm FOTA"
@@ -8220,7 +8286,7 @@
       mvno_match_data="alaskacomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Alaskacomm"
@@ -8235,7 +8301,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Alaskacomm"
@@ -8249,7 +8315,7 @@
       mvno_match_data="alaskacomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="U.S.Cellular"
@@ -8331,16 +8397,54 @@
   <!-- and a second APN to be used when DUN is required.  Even though the -->
   <!-- parameters appear the same, the profileID sent to the radio when requesting -->
   <!-- a DUN connection will be different -->
-  <!-- 1xRTT - CDMA -->
-  
-  <apn carrier="Sprint" mcc="310" mnc="120" apn="Sprint" user="Sprint" server="*" type="mms" password="*" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" authtype="3"/>
-  <apn carrier="Sprint LTE ota" mcc="310" mnc="120" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="Sprint EHRPD ota" mcc="310" mnc="120" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="Sprint LTE internet" mcc="310" mnc="120" apn="n.ispsn" type="default,mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="Sprint EHRPD internet" mcc="310" mnc="120" apn="n.ispsn" type="default,mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="Sprint CdmaNai" mcc="312" mnc="530" apn="CdmaNai" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="mms" carrier_enabled="false" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="6" />
-  <apn carrier="Boost Mobile CdmaNai" mcc="311" mnc="870" apn="CdmaNai" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mm.myboostmobile.com" type="mms" carrier_enabled="false" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="6" />
-  
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Sprint"
+      mcc="310"
+      mnc="120"
+      apn="sprint"
+      type="default,supl,mms,ims,cbs"
+      mmsc="http://mms.sprintpcs.com"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      bearer_bitmask="4|5|6|7|8|12"
+  />
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Sprint"
+      mcc="310"
+      mnc="120"
+      apn="sprint"
+      type="default,supl,mms,ims,cbs,dun"
+      mmsc="http://mms.sprintpcs.com"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      bearer_bitmask="4|5|6|7|8|12"
+      profile_id="1"
+  />
+
+  <!-- this APN will be deleted and replaced by a new ia APN by the HFA provisioning process.
+       This is just a bootstrap APN to enable HFA -->
+  <apn carrier="OTA"
+      mcc="310"
+      mnc="120"
+      apn="otasn"
+      type="fota,ia"
+      protocol="IPV4V6"
+      user="null"
+      password="null"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 15, 16 -->
+  <apn carrier="SPCS Global"
+      mcc="310"
+      mnc="120"
+      apn="cinet.spcs"
+      mmsc="http://mms.sprintpcs.com"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      type="default,supl,mms"
+      bearer_bitmask="1|2|3|9|10|11|15|16"
+  />
+
   <apn carrier="My Multi Media"
       mcc="310"
       mnc="130"
@@ -8364,7 +8468,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Carolina IMS"
@@ -8376,7 +8480,7 @@
       mvno_match_data="carolinawest"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Carolina IMS"
@@ -8388,7 +8492,7 @@
       mvno_match_data="carolinawest"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Carolina FOTA"
@@ -8400,7 +8504,7 @@
       mvno_match_data="carolinawest"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Carolina FOTA"
@@ -8412,7 +8516,7 @@
       mvno_match_data="carolinawest"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Carolina west"
@@ -8427,7 +8531,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Carolina west"
@@ -8442,7 +8546,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="internet"
@@ -8829,11 +8933,43 @@
       mcc="310"
       mnc="260"
       apn="fast.t-mobile.com"
-      mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc"
-      type="default,supl,mms"
+      type="default,supl"
       protocol="IPV6"
       roaming_protocol="IP"
       mtu="1440"
+  />
+
+  <apn carrier="T-Mobile MMS"
+      mcc="310"
+      mnc="260"
+      apn="TMUS"
+      mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IP"
+  />
+
+  <apn carrier="Project Fi - T"
+       mcc="310"
+       mnc="260"
+       apn="h2g2"
+       user="none"
+       server="*"
+       password="none"
+       mmsc="http://mmsc1.g-mms.com/mms/wapenc"
+       protocol="IPV6"
+       roaming_protocol="IP"
+       mvno_match_data="31026097"
+       mvno_type="IMSI"
+  />
+
+  <apn carrier="T-Mobile IMS"
+      mcc="310"
+      mnc="260"
+      apn="ims"
+      type="ims"
+      modem_cognitive="true"
+      protocol="IPV6"
   />
 
   <apn carrier="MetroPCS"
@@ -8943,6 +9079,13 @@
       roaming_protocol="IP"
       mvno_match_data="6D"
       mvno_type="gid"
+  />
+
+  <apn carrier="agms"
+      mcc="310"
+      mnc="280"
+      apn="agms"
+      type="default,supl"
   />
 
   <apn carrier="T-Mobile US 300"
@@ -9070,7 +9213,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Alltel2 IMS"
@@ -9082,7 +9225,7 @@
       mvno_match_data="alltel2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Alltel2 IMS"
@@ -9094,7 +9237,7 @@
       mvno_match_data="alltel2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Alltel2 FOTA"
@@ -9106,7 +9249,7 @@
       mvno_match_data="alltel2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Alltel2 FOTA"
@@ -9118,7 +9261,7 @@
       mvno_match_data="alltel2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Alltel2"
@@ -9133,7 +9276,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Alltel2"
@@ -9148,7 +9291,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="pioneer"
@@ -9164,7 +9307,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Pioneer IMS"
@@ -9176,7 +9319,7 @@
       mvno_match_data="pioneer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Pioneer IMS"
@@ -9188,7 +9331,7 @@
       mvno_match_data="pioneer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Pioneer FOTA"
@@ -9200,7 +9343,7 @@
       mvno_match_data="pioneer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Pioneer FOTA"
@@ -9212,7 +9355,7 @@
       mvno_match_data="pioneer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Pioneer"
@@ -9227,7 +9370,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Pioneer"
@@ -9242,7 +9385,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Cingular 380 ATT"
@@ -9373,7 +9516,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Gci IMS"
@@ -9385,7 +9528,7 @@
       mvno_match_data="gci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Gci IMS"
@@ -9397,7 +9540,7 @@
       mvno_match_data="gci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Gci FOTA"
@@ -9409,7 +9552,7 @@
       mvno_match_data="gci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Gci FOTA"
@@ -9421,7 +9564,7 @@
       mvno_match_data="gci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Gci"
@@ -9436,7 +9579,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Gci"
@@ -9451,7 +9594,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Viaero Connect"
@@ -9495,7 +9638,7 @@
       mnc="470"
       apn="admin.4g.ntelos.com"
       type="admin,fota,ota"
-      bearer="13"
+      bearer_bitmask="13"
       mmsc="http://mms.ntelospcs.net"
       server="*"
       protocol="IPV4V6"
@@ -9506,7 +9649,7 @@
       mnc="470"
       apn="admin.4g.ntelos.com"
       type="admin,fota,ota"
-      bearer="14"
+      bearer_bitmask="14"
       mmsc="http://mms.ntelospcs.net"
       server="*"
       protocol="IPV4V6"
@@ -9527,7 +9670,7 @@
       mnc="470"
       apn="tethering.4g.ntelos.com"
       type="dun,pam"
-      bearer="13"
+      bearer_bitmask="13"
       mmsc="http://mms.ntelospcs.net"
       server="*"
       protocol="IPV4V6"
@@ -9538,7 +9681,7 @@
       mnc="470"
       apn="tethering.4g.ntelos.com"
       type="dun,pam"
-      bearer="14"
+      bearer_bitmask="14"
       mmsc="http://mms.ntelospcs.net"
       server="*"
       protocol="IPV4V6"
@@ -9557,7 +9700,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="DataConnect"
@@ -9764,7 +9907,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Inland IMS"
@@ -9776,7 +9919,7 @@
       mvno_match_data="inland"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Inland IMS"
@@ -9788,7 +9931,7 @@
       mvno_match_data="inland"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Inland FOTA"
@@ -9800,7 +9943,7 @@
       mvno_match_data="inland"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Inland FOTA"
@@ -9812,7 +9955,7 @@
       mvno_match_data="inland"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Inland"
@@ -9827,7 +9970,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Inland"
@@ -9842,7 +9985,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="CellularOne MMS"
@@ -9903,7 +10046,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Cellcom IMS"
@@ -9915,7 +10058,7 @@
       mvno_match_data="cellcom"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Cellcom IMS"
@@ -9927,7 +10070,7 @@
       mvno_match_data="cellcom"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Cellcom FOTA"
@@ -9939,7 +10082,7 @@
       mvno_match_data="cellcom"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Cellcom FOTA"
@@ -9951,7 +10094,7 @@
       mvno_match_data="cellcom"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Cellcom"
@@ -9966,7 +10109,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Cellcom"
@@ -9981,7 +10124,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
   <apn carrier="EpicINT"
       mcc="310"
@@ -10114,7 +10257,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Appalachian IMS"
@@ -10126,7 +10269,7 @@
       mvno_match_data="appalachian"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Appalachian IMS"
@@ -10138,7 +10281,7 @@
       mvno_match_data="appalachian"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Appalachian FOTA"
@@ -10150,7 +10293,7 @@
       mvno_match_data="appalachian"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Appalachian FOTA"
@@ -10162,7 +10305,7 @@
       mvno_match_data="appalachian"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Appalachian"
@@ -10177,7 +10320,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Appalachian"
@@ -10192,7 +10335,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
   <apn carrier="Web 2"
       mcc="310"
@@ -10278,7 +10421,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Nepa IMS"
@@ -10290,7 +10433,7 @@
       mvno_match_data="nepa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nepa IMS"
@@ -10302,7 +10445,7 @@
       mvno_match_data="nepa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Nepa FOTA"
@@ -10314,7 +10457,7 @@
       mvno_match_data="nepa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nepa FOTA"
@@ -10326,7 +10469,7 @@
       mvno_match_data="nepa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Nepa"
@@ -10341,7 +10484,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nepa"
@@ -10356,7 +10499,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Internet"
@@ -10416,7 +10559,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Midrivers IMS"
@@ -10428,7 +10571,7 @@
       mvno_match_data="midrivers"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Midrivers IMS"
@@ -10440,7 +10583,7 @@
       mvno_match_data="midrivers"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Midrivers FOTA"
@@ -10452,7 +10595,7 @@
       mvno_match_data="midrivers"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Midrivers FOTA"
@@ -10464,7 +10607,7 @@
       mvno_match_data="midrivers"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Midrivers"
@@ -10479,7 +10622,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Midrivers"
@@ -10494,7 +10637,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
   <apn carrier="WOW_WAP"
       mcc="310"
@@ -10519,7 +10662,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Jamesvalley IMS"
@@ -10531,7 +10674,7 @@
       mvno_match_data="jamesvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Jamesvalley IMS"
@@ -10543,7 +10686,7 @@
       mvno_match_data="jamesvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Jamesvalley FOTA"
@@ -10555,7 +10698,7 @@
       mvno_match_data="jamesvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Jamesvalley FOTA"
@@ -10567,7 +10710,7 @@
       mvno_match_data="jamesvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Jamesvalley"
@@ -10582,7 +10725,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Jamesvalley"
@@ -10597,7 +10740,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="coppervalley"
@@ -10613,7 +10756,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Coppervalley IMS"
@@ -10625,7 +10768,7 @@
       mvno_match_data="coppervalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Coppervalley IMS"
@@ -10637,7 +10780,7 @@
       mvno_match_data="coppervalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Coppervalley FOTA"
@@ -10649,7 +10792,7 @@
       mvno_match_data="coppervalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Coppervalley FOTA"
@@ -10661,7 +10804,7 @@
       mvno_match_data="coppervalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Copper Valley"
@@ -10676,7 +10819,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Copper Valley"
@@ -10691,7 +10834,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="nntcwire"
@@ -10707,7 +10850,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Nntcwire IMS"
@@ -10719,7 +10862,7 @@
       mvno_match_data="nntcwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nntcwire IMS"
@@ -10731,7 +10874,7 @@
       mvno_match_data="nntcwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Nntcwire FOTA"
@@ -10743,7 +10886,7 @@
       mvno_match_data="nntcwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nntcwire FOTA"
@@ -10755,7 +10898,7 @@
       mvno_match_data="nntcwire"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Nntcwire"
@@ -10770,7 +10913,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nntcwire"
@@ -10785,7 +10928,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="silverstar"
@@ -10801,7 +10944,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Silverstar IMS"
@@ -10813,7 +10956,7 @@
       mvno_match_data="silverstar"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Silverstar IMS"
@@ -10825,7 +10968,7 @@
       mvno_match_data="silverstar"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Silverstar FOTA"
@@ -10837,7 +10980,7 @@
       mvno_match_data="silverstar"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Silverstar FOTA"
@@ -10849,7 +10992,7 @@
       mvno_match_data="silverstar"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Silverstar"
@@ -10864,7 +11007,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Silverstar"
@@ -10879,7 +11022,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="snakeriver"
@@ -10895,7 +11038,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Snakeriver IMS"
@@ -10907,7 +11050,7 @@
       mvno_match_data="snakeriver"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Snakeriver IMS"
@@ -10919,7 +11062,7 @@
       mvno_match_data="snakeriver"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Snakeriver FOTA"
@@ -10931,7 +11074,7 @@
       mvno_match_data="snakeriver"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Snakeriver FOTA"
@@ -10943,7 +11086,7 @@
       mvno_match_data="snakeriver"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Snakeriver"
@@ -10958,7 +11101,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Snakeriver"
@@ -10973,7 +11116,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="southcentral"
@@ -10989,7 +11132,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Southcentral IMS"
@@ -11001,7 +11144,7 @@
       mvno_match_data="southcentral"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Southcentral IMS"
@@ -11013,7 +11156,7 @@
       mvno_match_data="southcentral"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Southcentral FOTA"
@@ -11025,7 +11168,7 @@
       mvno_match_data="southcentral"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Southcentral FOTA"
@@ -11037,7 +11180,7 @@
       mvno_match_data="southcentral"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Southcentral"
@@ -11052,7 +11195,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Southcentral"
@@ -11067,7 +11210,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="strata"
@@ -11083,7 +11226,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Strata IMS"
@@ -11095,7 +11238,7 @@
       mvno_match_data="strata"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Strata IMS"
@@ -11107,7 +11250,7 @@
       mvno_match_data="strata"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Strata FOTA"
@@ -11119,7 +11262,7 @@
       mvno_match_data="strata"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Strata FOTA"
@@ -11131,7 +11274,7 @@
       mvno_match_data="strata"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="strata"
@@ -11146,7 +11289,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="strata"
@@ -11161,7 +11304,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="syringa"
@@ -11177,7 +11320,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Syringa IMS"
@@ -11189,7 +11332,7 @@
       mvno_match_data="syringa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Syringa IMS"
@@ -11201,7 +11344,7 @@
       mvno_match_data="syringa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Syringa FOTA"
@@ -11213,7 +11356,7 @@
       mvno_match_data="syringa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Syringa FOTA"
@@ -11225,7 +11368,7 @@
       mvno_match_data="syringa"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Syringa"
@@ -11240,7 +11383,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Syringa"
@@ -11255,7 +11398,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="thumbcellular"
@@ -11271,7 +11414,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Thumb IMS"
@@ -11283,7 +11426,7 @@
       mvno_match_data="thumbcellular"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Thumb IMS"
@@ -11295,7 +11438,7 @@
       mvno_match_data="thumbcellular"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Thumb FOTA"
@@ -11307,7 +11450,7 @@
       mvno_match_data="thumbcellular"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Thumb FOTA"
@@ -11319,7 +11462,7 @@
       mvno_match_data="thumbcellular"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Thumbcellular"
@@ -11334,7 +11477,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Thumbcellular"
@@ -11349,7 +11492,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="elementmobile"
@@ -11365,7 +11508,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Elementmobile IMS"
@@ -11377,7 +11520,7 @@
       mvno_match_data="elementmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Elementmobile IMS"
@@ -11389,7 +11532,7 @@
       mvno_match_data="elementmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Elementmobile FOTA"
@@ -11401,7 +11544,7 @@
       mvno_match_data="elementmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Elementmobile FOTA"
@@ -11413,7 +11556,7 @@
       mvno_match_data="elementmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Elementmobile"
@@ -11428,7 +11571,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Elementmobile"
@@ -11443,7 +11586,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="PINE WAP"
@@ -11479,7 +11622,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Sprocket IMS"
@@ -11491,7 +11634,7 @@
       mvno_match_data="sprocket"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Sprocket IMS"
@@ -11503,7 +11646,7 @@
       mvno_match_data="sprocket"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Sprocket FOTA"
@@ -11515,7 +11658,7 @@
       mvno_match_data="sprocket"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Sprocket FOTA"
@@ -11527,7 +11670,7 @@
       mvno_match_data="sprocket"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Sprocket"
@@ -11542,7 +11685,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Sprocket"
@@ -11557,7 +11700,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="ISP"
@@ -11600,7 +11743,7 @@
       protocol="IPV4V6"
       authtype="3"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
       mtu="1422"
   />
 
@@ -11612,7 +11755,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -11624,7 +11767,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
@@ -11636,7 +11779,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -11648,9 +11791,10 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="220"
@@ -11659,67 +11803,20 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
-      mnc="220"
+      mnc="221"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
       type="default,mms,dun,hipri,fota"
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="220"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="220"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="220"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="220"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -11731,7 +11828,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -11743,79 +11840,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="221"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="221"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="221"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="221"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="221"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="13"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="221"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
@@ -11827,7 +11852,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -11839,10 +11864,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="222"
@@ -11851,67 +11877,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="222"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="222"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="222"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="222"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="222"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -11923,7 +11889,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -11935,10 +11901,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="223"
@@ -11947,67 +11914,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="223"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="223"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="223"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="223"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="223"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -12019,7 +11926,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -12031,10 +11938,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="224"
@@ -12043,70 +11951,11 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="224"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="224"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="224"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="224"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="224"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
-      mtu="1422"
-  />
-
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="225"
@@ -12115,67 +11964,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="225"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="225"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="225"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="225"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="225"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -12188,7 +11977,7 @@
       carrier_enabled="true"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -12201,7 +11990,7 @@
       carrier_enabled="true"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
@@ -12213,7 +12002,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -12225,10 +12014,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="226"
@@ -12237,67 +12027,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="226"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="226"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="226"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="226"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="226"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -12309,7 +12039,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -12321,10 +12051,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="227"
@@ -12333,67 +12064,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="227"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="227"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="227"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="227"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="227"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -12405,7 +12076,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -12417,10 +12088,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="228"
@@ -12429,67 +12101,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="228"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="228"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="228"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="228"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="228"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -12501,7 +12113,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -12513,10 +12125,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="229"
@@ -12525,67 +12138,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="229"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="229"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="229"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="229"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="229"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -12598,7 +12151,7 @@
       mmsproxy=""
       mmsc="http://pix.cspire.com"
       type="admin,fota,ota"
-      bearer="14"
+      bearer_bitmask="14"
       protocol="IPV4V6"
   />
 
@@ -12611,7 +12164,7 @@
       mmsproxy=""
       mmsc="http://pix.cspire.com"
       type="admin,fota,ota"
-      bearer="13"
+      bearer_bitmask="13"
       protocol="IPV4V6"
   />
 
@@ -12636,7 +12189,7 @@
       mmsproxy=""
       mmsc="http://pix.cspire.com"
       type="dun,pam"
-      bearer="13"
+      bearer_bitmask="13"
       protocol="IPV4V6"
   />
 
@@ -12649,7 +12202,7 @@
       mmsproxy=""
       mmsc="http://pix.cspire.com"
       type="dun,pam"
-      bearer="14"
+      bearer_bitmask="14"
       protocol="IPV4V6"
   />
 
@@ -12666,7 +12219,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="leaco"
@@ -12682,7 +12235,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Leaco IMS"
@@ -12694,7 +12247,7 @@
       mvno_match_data="leaco"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Leaco IMS"
@@ -12706,7 +12259,7 @@
       mvno_match_data="leaco"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Leaco FOTA"
@@ -12718,7 +12271,7 @@
       mvno_match_data="leaco"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Leaco FOTA"
@@ -12730,7 +12283,7 @@
       mvno_match_data="leaco"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Leaco"
@@ -12745,7 +12298,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Leaco"
@@ -12760,7 +12313,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="illinoisvalley"
@@ -12776,7 +12329,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Illinois IMS"
@@ -12788,7 +12341,7 @@
       mvno_match_data="illinoisvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Illinois IMS"
@@ -12800,7 +12353,7 @@
       mvno_match_data="illinoisvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Illinois FOTA"
@@ -12812,7 +12365,7 @@
       mvno_match_data="illinoisvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Illinois FOTA"
@@ -12824,7 +12377,7 @@
       mvno_match_data="illinoisvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Illinois valley"
@@ -12839,7 +12392,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Illinois valley"
@@ -12854,7 +12407,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="nemont"
@@ -12870,7 +12423,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Nemont IMS"
@@ -12882,7 +12435,7 @@
       mvno_match_data="nemont"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nemont IMS"
@@ -12894,7 +12447,7 @@
       mvno_match_data="nemont"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Nemont FOTA"
@@ -12906,7 +12459,7 @@
       mvno_match_data="nemont"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nemont FOTA"
@@ -12918,7 +12471,7 @@
       mvno_match_data="nemont"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Nemont"
@@ -12933,7 +12486,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Nemont"
@@ -12948,7 +12501,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="GCI WEB"
@@ -12999,7 +12552,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -13014,7 +12567,7 @@
       type="default,dun"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="0"
       modem_cognitive="true"
       max_conns="1023"
@@ -13028,7 +12581,7 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="3"
       modem_cognitive="true"
       max_conns="1023"
@@ -13042,7 +12595,7 @@
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="3"
       modem_cognitive="true"
       max_conns="1023"
@@ -13056,7 +12609,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="2"
       modem_cognitive="true"
       max_conns="1023"
@@ -13070,7 +12623,7 @@
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="2"
       modem_cognitive="true"
       max_conns="1023"
@@ -13085,7 +12638,7 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       profile_id="4"
       modem_cognitive="true"
       max_conns="1023"
@@ -13100,7 +12653,7 @@
       type="cbs,mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       profile_id="4"
       modem_cognitive="true"
       max_conns="1023"
@@ -13120,7 +12673,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Chatmobrsa2 IMS"
@@ -13132,7 +12685,7 @@
       mvno_match_data="chatmobrsa2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chatmobrsa2 IMS"
@@ -13144,7 +12697,7 @@
       mvno_match_data="chatmobrsa2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Chatmobrsa2 FOTA"
@@ -13156,7 +12709,7 @@
       mvno_match_data="chatmobrsa2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chatmobrsa2 FOTA"
@@ -13168,7 +12721,7 @@
       mvno_match_data="chatmobrsa2"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Chatmobrsa2"
@@ -13183,7 +12736,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chatmobrsa2"
@@ -13198,7 +12751,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="northwestcell"
@@ -13214,7 +12767,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="NW IMS"
@@ -13226,7 +12779,7 @@
       mvno_match_data="northwestcell"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="NW IMS"
@@ -13238,7 +12791,7 @@
       mvno_match_data="northwestcell"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="NW FOTA"
@@ -13250,7 +12803,7 @@
       mvno_match_data="northwestcell"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="NW FOTA"
@@ -13262,7 +12815,7 @@
       mvno_match_data="northwestcell"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Northwestcell"
@@ -13277,7 +12830,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Northwestcell"
@@ -13292,7 +12845,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="chatmobrsa1"
@@ -13308,7 +12861,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Chatmobrsa1 IMS"
@@ -13320,7 +12873,7 @@
       mvno_match_data="chatmobrsa1"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chatmobrsa1 IMS"
@@ -13332,7 +12885,7 @@
       mvno_match_data="chatmobrsa1"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Chatmobrsa1 FOTA"
@@ -13344,7 +12897,7 @@
       mvno_match_data="chatmobrsa1"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chatmobrsa1 FOTA"
@@ -13356,7 +12909,7 @@
       mvno_match_data="chatmobrsa1"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Chatmobrsa1"
@@ -13371,7 +12924,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chatmobrsa1"
@@ -13386,7 +12939,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="bluegrass"
@@ -13402,7 +12955,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Bluegrass IMS"
@@ -13414,7 +12967,7 @@
       mvno_match_data="bluegrass"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Bluegrass IMS"
@@ -13426,7 +12979,7 @@
       mvno_match_data="bluegrass"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Bluegrass FOTA"
@@ -13438,7 +12991,7 @@
       mvno_match_data="bluegrass"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Bluegrass FOTA"
@@ -13450,7 +13003,7 @@
       mvno_match_data="bluegrass"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Bluegrass"
@@ -13465,7 +13018,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Bluegrass"
@@ -13480,7 +13033,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="ptci"
@@ -13496,7 +13049,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Ptci IMS"
@@ -13508,7 +13061,7 @@
       mvno_match_data="ptci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Ptci IMS"
@@ -13520,7 +13073,7 @@
       mvno_match_data="ptci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Ptci FOTA"
@@ -13532,7 +13085,7 @@
       mvno_match_data="ptci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Ptci FOTA"
@@ -13544,7 +13097,7 @@
       mvno_match_data="ptci"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Ptci"
@@ -13559,7 +13112,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Ptci"
@@ -13574,75 +13127,136 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <!-- Need two APNs for CDMA technologies: a default that is used normally -->
   <!-- and a second APN to be used when DUN is required.  Even though the -->
   <!-- parameters appear the same, the profileID sent to the radio when requesting -->
   <!-- a DUN connection will be different -->
-  <!-- IS95A - CDMA -->
-  <apn carrier="Verizon" mcc="310" mnc="00" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6"/>
-  <apn carrier="Verizon Internet" mcc="310" mnc="00" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
-  <apn carrier="Verizon FOTA" mcc="310" mnc="00" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
-  <apn carrier="Verizon IMS" mcc="310" mnc="00" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
-  <apn carrier="Verizon CBS" mcc="310" mnc="00" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
-  <apn carrier="Verizon" mcc="310" mnc="002" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="310" mnc="002" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="310" mnc="002" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="002" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="310" mnc="002" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="310" mnc="003" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="310" mnc="003" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="310" mnc="003" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="003" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="310" mnc="003" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="310" mnc="004" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="310" mnc="004" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="310" mnc="004" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="004" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="310" mnc="004" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="310" mnc="005" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="310" mnc="005" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="310" mnc="005" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="005" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="310" mnc="005" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="310" mnc="006" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="310" mnc="006" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="310" mnc="006" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="006" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="310" mnc="006" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="310" mnc="012" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="310" mnc="012" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="310" mnc="012" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="012" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="310" mnc="012" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="310" mnc="99" apn="internet" type="default,mms,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="310" mnc="99" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="310" mnc="99" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="99" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="310" mnc="99" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="311" mnc="480" apn="internet" type="mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="LTE - Verizon Internet" mcc="311" mnc="480" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - Verizon FOTA" mcc="311" mnc="480" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - Verizon IMS" mcc="311" mnc="480" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - Verizon CBS" mcc="311" mnc="480" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - Verizon SUPL" mcc="311" mnc="480" apn="VZW800" type="supl" protocol="IPV4V6" bearer="14" />
-  <apn carrier="EHRPD - Verizon Internet" mcc="311" mnc="480" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13"  />
-  <apn carrier="EHRPD - Verizon FOTA"  mcc="311" mnc="480" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - Verizon IMS" mcc="311" mnc="480" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - Verizon CBS" mcc="311" mnc="480" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - Verizon SUPL" mcc="311" mnc="480" apn="VZW800" type="supl" protocol="IPV4V6" bearer="13" />
-  <apn carrier="Verizon" mcc="311" mnc="482" apn="internet" type="mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="311" mnc="482" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="311" mnc="482" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="311" mnc="482" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="311" mnc="482" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon" mcc="311" mnc="485" apn="internet" type="mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" />
-  <apn carrier="Verizon Internet" mcc="311" mnc="485" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="311" mnc="485" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="311" mnc="485" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="311" mnc="485" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Verizon"
+      mcc="311"
+      mnc="480"
+      apn="internet"
+      authtype="3"
+      type="default,mms,supl,fota,ims,cbs"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      protocol="IPV4V6"
+      bearer_bitmask="4|5|6|7|8|12"
+  />
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Verizon"
+      mcc="311"
+      mnc="480"
+      apn="internet"
+      authtype="3"
+      type="default,mms,supl,fota,ims,cbs,dun"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      protocol="IPV4V6"
+      bearer_bitmask="4|5|6|7|8|12"
+      profile_id="1"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon"
+      mcc="311"
+      mnc="480"
+      apn="VZWINTERNET"
+      type="default,dun,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15"
+      profile_id="0"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon"
+      mcc="311"
+      mnc="480"
+      apn="VZWADMIN"
+      type="fota"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15"
+      profile_id="3"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon"
+      mcc="311"
+      mnc="480"
+      apn="VZWIMS"
+      type="ims,ia"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15"
+      profile_id="2"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon"
+      mcc="311"
+      mnc="480"
+      apn="VZWAPP"
+      type="cbs,mms"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15"
+      profile_id="4"
+      modem_cognitive="true"
+      max_conns="1023"
+      max_conns_time="300"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 15, 16 -->
+  <apn carrier="Sprint"
+      mcc="311"
+      mnc="490"
+      apn="cinet.spcs"
+      user="none"
+      server="*"
+      password="none"
+      mmsproxy="68.28.31.2"
+      mmsport="80"
+      mmsc="http://mmsc.vmobl.com:8088"
+      type="default,mms"
+      bearer_bitmask="1|2|3|9|10|11|15|16"
+  />
+
+  <apn carrier="Sprint CdmaNai"
+      mcc="311"
+      mnc="490"
+      mmsproxy="68.28.31.2"
+      mmsport="80"
+      mmsc="http://mmsc.vmobl.com:8088"
+      type="default,mms"
+      authtype="3"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="6"
+  />
+
+  <!-- bearer 13, 14 -->
+  <apn carrier="Sprint"
+      mcc="311"
+      mnc="490"
+      apn="otasn"
+      type="ota"
+      carrier_enabled="true"
+      protocol="IPV4V6"
+      bearer_bitmask="13|14"
+  />
 
   <apn carrier="24-7 WAP"
       mcc="311"
@@ -13805,6 +13419,7 @@
       mmsport="8080"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="580"
@@ -13813,67 +13428,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="580"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="580"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="580"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="580"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="580"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -13885,7 +13440,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -13897,7 +13452,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
@@ -13909,7 +13464,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -13921,10 +13476,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="581"
@@ -13933,67 +13489,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="581"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="581"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="581"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="581"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="581"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14005,7 +13501,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14017,10 +13513,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="582"
@@ -14029,67 +13526,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="582"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="582"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="582"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="582"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="582"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14101,7 +13538,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14113,10 +13550,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="583"
@@ -14125,67 +13563,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="583"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="583"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="583"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="583"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="583"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14197,7 +13575,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14209,10 +13587,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="584"
@@ -14221,67 +13600,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="584"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="584"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="584"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="584"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="584"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14293,7 +13612,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14305,10 +13624,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="585"
@@ -14317,67 +13637,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="585"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="585"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="585"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="585"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="585"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14389,7 +13649,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14401,10 +13661,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="586"
@@ -14413,67 +13674,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="586"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="586"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="586"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="586"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="586"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14485,7 +13686,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14497,10 +13698,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="587"
@@ -14509,67 +13711,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="587"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="587"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="587"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="587"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="587"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14581,7 +13723,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14593,10 +13735,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="588"
@@ -14605,67 +13748,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="588"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="588"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="588"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="588"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="588"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14677,7 +13760,7 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
       mtu="1422"
   />
 
@@ -14689,10 +13772,11 @@
       type="default,mms,dun,hipri,fota"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
       mtu="1422"
   />
 
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="U.S. Cellular"
       mcc="311"
       mnc="589"
@@ -14701,67 +13785,7 @@
       authtype="3"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="4"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="589"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="5"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="589"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="6"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="589"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="7"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="589"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="8"
-      mtu="1422"
-  />
-
-  <apn carrier="U.S. Cellular"
-      mcc="311"
-      mnc="589"
-      mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      type="default,mms,dun,hipri,fota"
-      authtype="3"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      bearer="12"
+      bearer_bitmask="4|5|6|7|8|12"
       mtu="1422"
   />
 
@@ -14778,7 +13802,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Gsc IMS"
@@ -14790,7 +13814,7 @@
       mvno_match_data="gsc"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Gsc IMS"
@@ -14802,7 +13826,7 @@
       mvno_match_data="gsc"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Gsc FOTA"
@@ -14814,7 +13838,7 @@
       mvno_match_data="gsc"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Gsc FOTA"
@@ -14826,7 +13850,7 @@
       mvno_match_data="gsc"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Gsc"
@@ -14841,7 +13865,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Gsc"
@@ -14856,7 +13880,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="cox"
@@ -14872,7 +13896,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Cox IMS"
@@ -14884,7 +13908,7 @@
       mvno_match_data="cox"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Cox IMS"
@@ -14896,7 +13920,7 @@
       mvno_match_data="cox"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Cox FOTA"
@@ -14908,7 +13932,7 @@
       mvno_match_data="cox"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Cox FOTA"
@@ -14920,7 +13944,7 @@
       mvno_match_data="cox"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Cox"
@@ -14935,7 +13959,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Cox"
@@ -14950,7 +13974,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="srtcomm"
@@ -14966,7 +13990,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Srtcomm IMS"
@@ -14978,7 +14002,7 @@
       mvno_match_data="srtcomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Srtcomm IMS"
@@ -14990,7 +14014,7 @@
       mvno_match_data="srtcomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Srtcomm FOTA"
@@ -15002,7 +14026,7 @@
       mvno_match_data="srtcomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Srtcomm FOTA"
@@ -15014,7 +14038,7 @@
       mvno_match_data="srtcomm"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Srtcomm"
@@ -15029,7 +14053,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Srtcomm"
@@ -15044,7 +14068,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="unitedwireless"
@@ -15060,7 +14084,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="United IMS"
@@ -15072,7 +14096,7 @@
       mvno_match_data="unitedwireless"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="United IMS"
@@ -15084,7 +14108,7 @@
       mvno_match_data="unitedwireless"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="United FOTA"
@@ -15096,7 +14120,7 @@
       mvno_match_data="unitedwireless"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="United FOTA"
@@ -15108,7 +14132,7 @@
       mvno_match_data="unitedwireless"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Unitedwireless"
@@ -15123,7 +14147,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Unitedwireless"
@@ -15138,7 +14162,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="pinebelt"
@@ -15154,7 +14178,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Pinebelt IMS"
@@ -15166,7 +14190,7 @@
       mvno_match_data="pinebelt"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Pinebelt IMS"
@@ -15178,7 +14202,7 @@
       mvno_match_data="pinebelt"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Pinebelt FOTA"
@@ -15190,7 +14214,7 @@
       mvno_match_data="pinebelt"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Pinebelt FOTA"
@@ -15202,7 +14226,7 @@
       mvno_match_data="pinebelt"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
    />
 
   <apn carrier="Pinebelt"
@@ -15217,7 +14241,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Pinebelt"
@@ -15232,7 +14256,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
    />
   <apn carrier="TelAlaska Cellular"
       mcc="311"
@@ -15241,6 +14265,44 @@
       type="default"
       protocol="IP"
       roaming_protocol="IP"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 15, 16 -->
+  <apn carrier="Sprint"
+      mcc="311"
+      mnc="870"
+      apn="cinet.spcs"
+      user="none"
+      server="*"
+      password="none"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      mmsc="http://mm.myboostmobile.com"
+      type="default,mms"
+      bearer_bitmask="1|2|3|9|10|11|15|16"
+  />
+
+  <apn carrier="Sprint CdmaNai"
+      mcc="311"
+      mnc="870"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      mmsc="http://mm.myboostmobile.com"
+      type="default,mms"
+      authtype="3"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="6"
+  />
+
+  <!-- bearer 13, 14 -->
+  <apn carrier="Sprint"
+      mcc="311"
+      mnc="870"
+      apn="otasn"
+      type="ota"
+      protocol="IPV4V6"
+      bearer_bitmask="13|14"
   />
 
   <apn carrier="MobileNation"
@@ -15268,7 +14330,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Chariton IMS"
@@ -15280,7 +14342,7 @@
       mvno_match_data="charitonvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chariton IMS"
@@ -15292,7 +14354,7 @@
       mvno_match_data="charitonvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Chariton FOTA"
@@ -15304,7 +14366,7 @@
       mvno_match_data="charitonvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chariton FOTA"
@@ -15316,7 +14378,7 @@
       mvno_match_data="charitonvalley"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Chariton valley"
@@ -15331,7 +14393,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chariton valley"
@@ -15346,7 +14408,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Syringa Wireless"
@@ -15374,7 +14436,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Custer IMS"
@@ -15386,7 +14448,7 @@
       mvno_match_data="custer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Custer IMS"
@@ -15398,7 +14460,7 @@
       mvno_match_data="custer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Custer FOTA"
@@ -15410,7 +14472,7 @@
       mvno_match_data="custer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Custer FOTA"
@@ -15422,7 +14484,7 @@
       mvno_match_data="custer"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Custer"
@@ -15437,7 +14499,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Custer"
@@ -15452,7 +14514,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="chatmobility"
@@ -15468,7 +14530,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Chatmobility IMS"
@@ -15480,7 +14542,7 @@
       mvno_match_data="chatmobility"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Chatmobility IMS"
@@ -15492,7 +14554,7 @@
       mvno_match_data="chatmobility"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="chatmobility FOTA"
@@ -15504,7 +14566,7 @@
       mvno_match_data="chatmobility"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="chatmobility FOTA"
@@ -15516,7 +14578,7 @@
       mvno_match_data="chatmobility"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="chatmobility"
@@ -15531,7 +14593,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="chatmobility"
@@ -15546,7 +14608,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="NexTech Ota"
@@ -15558,7 +14620,7 @@
       mmsproxy=""
       mmsc="http://mms.ntwls.net/nex-tech/mms.php"
       type="admin,fota,ota"
-      bearer="14"
+      bearer_bitmask="14"
       protocol="IP"
   />
 
@@ -15571,7 +14633,7 @@
       mmsproxy=""
       mmsc="http://mms.ntwls.net/nex-tech/mms.php"
       type="admin,fota,ota"
-      bearer="13"
+      bearer_bitmask="13"
       protocol="IP"
   />
 
@@ -15596,7 +14658,7 @@
       mmsproxy=""
       mmsc="http://mms.ntwls.net/nex-tech/mms.php"
       type="dun,pam"
-      bearer="14"
+      bearer_bitmask="14"
       protocol="IPV4V6"
   />
 
@@ -15609,8 +14671,46 @@
       mmsproxy=""
       mmsc="http://mms.ntwls.net/nex-tech/mms.php"
       type="dun,pam"
-      bearer="13"
+      bearer_bitmask="13"
       protocol="IPV4V6"
+  />
+
+  <apn carrier="Sprint CdmaNai"
+      mcc="312"
+      mnc="530"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      mmsc="http://mms.sprintpcs.com"
+      authtype="3"
+      type="default,mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer_bitmask="6"
+  />
+
+  <!-- bearer 1, 2, 3, 9, 10, 11, 15, 16 -->
+  <apn carrier="Sprint"
+      mcc="312"
+      mnc="530"
+      apn="cinet.spcs"
+      user="none"
+      server="*"
+      password="none"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      mmsc="http://mms.sprintpcs.com"
+      type="default,mms"
+      bearer_bitmask="1|2|3|9|10|11|15|16"
+  />
+
+  <!-- bearer 13, 14 -->
+  <apn carrier="Sprint"
+      mcc="312"
+      mnc="530"
+      apn="otasn"
+      type="ota"
+      protocol="IPV4V6"
+      bearer_bitmask="13|14"
   />
 
   <apn carrier="Blue Wireless"
@@ -15627,6 +14727,19 @@
       protocol="IPV4V6"
   />
 
+  <apn carrier="Sprint APN"
+      mcc="316"
+      mnc="010"
+      apn="cinet.spcs"
+      user="none"
+      server="*"
+      password="none"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      mmsc="http://mms.sprintpcs.com"
+      type="default"
+  />
+
   <apn carrier="openmobile"
       mcc="330"
       mnc="000"
@@ -15640,7 +14753,7 @@
       carrier_enabled="false"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="6"
+      bearer_bitmask="6"
   />
 
   <apn carrier="Openmobile IMS"
@@ -15652,7 +14765,7 @@
       mvno_match_data="openmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Openmobile IMS"
@@ -15664,7 +14777,7 @@
       mvno_match_data="openmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Openmobile FOTA"
@@ -15676,7 +14789,7 @@
       mvno_match_data="openmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Openmobile FOTA"
@@ -15688,7 +14801,7 @@
       mvno_match_data="openmobile"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Openmobile"
@@ -15703,7 +14816,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="13"
+      bearer_bitmask="13"
   />
 
   <apn carrier="Openmobile"
@@ -15718,7 +14831,7 @@
       type="default,mms,dun,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      bearer="14"
+      bearer_bitmask="14"
   />
 
   <apn carrier="Puerto Rico:Claro:LTE"
@@ -15839,7 +14952,7 @@
       type="mms"
   />
 
-  <apn carrier='Nextel Localización'
+  <apn carrier='Localización'
       mcc='334'
       mnc='090'
       apn='location.nexteldata.com.mx'
@@ -15849,7 +14962,7 @@
       port='7275'
   />
 
-  <apn carrier='Nextel MMS'
+  <apn carrier='MMS'
       mcc='334'
       mnc='090'
       apn='mms.nexteldata.com.mx'
@@ -15860,7 +14973,7 @@
       type='mms'
   />
 
-  <apn carrier='Nextel Modem'
+  <apn carrier='Internet'
       mcc='334'
       mnc='090'
       apn='modem.nexteldata.com.mx'
@@ -15868,7 +14981,7 @@
       type='dun'
   />
 
-  <apn carrier='Nextel Navegación'
+  <apn carrier='Navegación'
       mcc='334'
       mnc='090'
       apn='wap.nexteldata.com.mx'
@@ -25225,6 +24338,16 @@
       type="default,supl"
   />
 
+  <apn carrier="sp-mode"
+      mcc="440"
+      mnc="10"
+      apn="spmode.ne.jp"
+      user=""
+      server=""
+      password=""
+      type="default,supl"
+  />
+
   <apn carrier="mopera U"
       mcc="440"
       mnc="10"
@@ -25246,51 +24369,7 @@
       type="default,supl"
   />
 
-  <apn carrier="b-mobile 3G・4G 1GB/Fair"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@fr"
-      server=""
-      password="bmobile"
-      authtype="3"
-      type="default,supl"
-  />
-
-  <apn carrier="b-mobile 3G・4G U300"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@u300"
-      server=""
-      password="bmobile"
-      authtype="3"
-      type="default,supl"
-  />
-
-  <apn carrier="b-mobile スマホ電話"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@spd"
-      server=""
-      password="bmobile"
-      authtype="3"
-      type="default,supl"
-  />
-
-  <apn carrier="b-mobile 4G カメレオンSIM"
-      mcc="440"
-      mnc="10"
-      apn="bmobile.ne.jp"
-      user="bmobile@cm"
-      server=""
-      password="bmobile"
-      authtype="3"
-      type="default,supl"
-  />
-
-  <apn carrier="IIJmio (LTE端末)"
+  <apn carrier="IIJmio"
       mcc="440"
       mnc="10"
       apn="iijmio.jp"
@@ -25299,17 +24378,6 @@
       password="iij"
       authtype="3"
       protocol="IPV4V6"
-      type="default,supl"
-  />
-
-  <apn carrier="IIJmio (3G端末)"
-      mcc="440"
-      mnc="10"
-      apn="iijmio.jp"
-      user="mio@iij"
-      server=""
-      password="iij"
-      authtype="3"
       type="default,supl"
   />
 
@@ -25333,8 +24401,33 @@
       authtype="2"
   />
 
+  <apn carrier="SoftBank 3G"
+      mcc="440"
+      mnc="20"
+      apn="plus.softbank"
+      user="plus"
+      password="softbank"
+      mmsproxy="andmms.plusacs.ne.jp"
+      mmsport="8080"
+      mmsc="http://mms-s"
+      type="default,mms,supl,hipri"
+      authtype="2"
+  />
 
-  <apn carrier="Application"
+  <apn carrier="SoftBank 4G"
+      mcc="440"
+      mnc="20"
+      apn="plus.4g"
+      user="plus"
+      password="4g"
+      mmsproxy="andmms.plusacs.ne.jp"
+      mmsport="8080"
+      mmsc="http://mms-s"
+      type="default,mms,supl,hipri"
+      authtype="2"
+  />
+
+  <apn carrier="Y! mobile"
       mcc="440"
       mnc="20"
       apn="plus.acs.jp"
@@ -26638,10 +25731,8 @@
   <apn carrier="Virgin Internet"
       mcc="505"
       mnc="02"
-      apn="virgininternet"
+      apn="yesinternet"
       type="default"
-      proxy="202.139.83.152"
-      port="8070"
       mvno_match_data="505029"
       mvno_type="imsi"
   />
@@ -26649,10 +25740,10 @@
   <apn carrier="Virgin MMS"
       mcc="505"
       mnc="02"
-      apn="virginmms"
+      apn="mms"
       type="mms"
-      mmsc="http://mms.virginvibe.com.au:8002"
-      mmsproxy="202.139.83.152"
+      mmsc="http://mmsc.optus.com.au:8002/"
+      mmsproxy="61.88.190.10"
       mmsport="8070"
       mvno_match_data="505029"
       mvno_type="imsi"
@@ -30566,8 +29657,6 @@
       apn="wap.gprs.unifon.com.ar"
       user="wap"
       password="wap"
-      proxy="200.5.68.10"
-      port="8080"
       authtype="1"
       type="default,supl"
   />
@@ -32223,4 +31312,3 @@
       type="default"
   />
 </apns>
-
