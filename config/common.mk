@@ -16,6 +16,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
+    ro.setupwizard.network_required=false \
+    ro.setupwizard.gservices_delay=-1 \
     ro.build.selinux=1 \
     ro.adb.secure=1
     
@@ -58,9 +60,9 @@ PRODUCT_COPY_FILES += \
     vendor/twisted/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/twisted/prebuilt/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/twisted/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+#PRODUCT_COPY_FILES += \
+#    vendor/twisted/prebuilt/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+#    vendor/twisted/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
  
 # Backup Tool
 PRODUCT_COPY_FILES += \
