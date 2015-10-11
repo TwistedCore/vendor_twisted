@@ -72,63 +72,57 @@ ADDITIONAL_BUILD_PROPERTIES += \
  export LD_LIBRARY_PATH := $(TARGET_ARCH_LIB_PATH):$(LD_LIBRARY_PATH)
  export LIBRARY_PATH := $(TARGET_ARCH_LIB_PATH):$(LIBRARY_PATH)
 
-ifeq ($(GRAPHITE_OPTS),true)
-   OPT1 := (graphite)
+
+ifeq ($(USE_O3_OPTIMIZATIONS),true)
+OPT1 := (O3)
  else
    OPT1:=
 endif
 
-ifeq ($(KRAIT_TUNINGS),true)
-   OPT2 := (krait)
+ifeq ($(STRICT_ALIASING),true)
+   OPT2 := (strict)
  else
    OPT2:=
 endif
 
-ifeq ($(STRICT_ALIASING),true)
-   OPT3 := (strict)
+ifeq ($(GRAPHITE_OPTS),true)
+OPT3 := (graphite)
  else
    OPT3:=
 endif
 
-ifeq ($(ENABLE_PTHREAD),true)
-   OPT4 := (pthread)
+ifeq ($(KRAIT_TUNINGS),true)
+OPT4 := (krait)
  else
    OPT4:=
 endif
 
-ifeq ($(ENABLE_ARM_MODE),true)
-   OPT5 := (saber-mode)
+ifeq ($(ENABLE_GCCONLY),true)
+OPT5 := (gcconly)
  else
    OPT5:=
 endif
 
-ifeq ($(ENABLE_GOMP),true)
-   OPT6 := (openmp)
+ifeq ($(FLOOP_NEST_OPTIMIZE),true)
+OPT6 := (floop_nest_optimize)
  else
    OPT6:=
 endif
 
-ifeq ($(ENABLE_SANITIZE),true)
-   OPT7 := (memory_sanitizer)
+ifeq ($(TARGET_USE_PIPE),true)
+OPT7 := (pipe)
  else
    OPT7:=
 endif
 
-ifeq (true,$(FLOOP_NEST_OPTIMIZE))
-   OPT8 :=
+ifeq ($(FFAST_MATH),true)
+OPT8 := (fast_math)
  else
    OPT8:=
 endif
 
-ifeq (true,$(FFAST_MATH))
-   OPT9 := (fast_math)
- else
-   OPT9:=
-endif
-
-  GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT9)
+  GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT8)
   ifneq ($(GCC_OPTIMIZATION_LEVELS),)
 ADDITIONAL_BUILD_PROPERTIES += \
       ro.sm.flags=$(GCC_OPTIMIZATION_LEVELS)
   endif
-export GCC_OPTIMIZATION_LEVELS
