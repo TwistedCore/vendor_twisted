@@ -54,7 +54,10 @@ PRODUCT_PACKAGES += \
     Layersbackup \
     AdAway \
     Terminal \
-    Busybox
+    Busybox \
+    KernelAdiutor \
+    LayersManager \
+    LMT
 
 # APN list
 PRODUCT_COPY_FILES += \
