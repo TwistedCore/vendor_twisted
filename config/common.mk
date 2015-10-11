@@ -20,10 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.gservices_delay=-1 \
     ro.build.selinux=1 \
     ro.adb.secure=1
-    
-# Launcher3 supported devices
-PRODUCT_PACKAGES += \
-    Launcher3
 
 # Nova Launcher
 #PRODUCT_COPY_FILES += \
@@ -54,9 +50,11 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     LockClock \
+    Launcher3 \
     Layersbackup \
     AdAway \
-    Terminal
+    Terminal \
+    Busybox
 
 # APN list
 PRODUCT_COPY_FILES += \
