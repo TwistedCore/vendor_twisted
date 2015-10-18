@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
     Busybox \
     KernelAdiutor \
     LayersManager \
-    LMT
+    LMT \
+    SlimOTA
 
 # APN list
 PRODUCT_COPY_FILES += \
@@ -87,7 +88,7 @@ PRODUCT_COPY_FILES += \
 # Versioning System
 PRODUCT_VERSION_MAJOR = 6.0.0
 PRODUCT_VERSION_MINOR = alpha
-PRODUCT_VERSION_MAINTENANCE = 0.1
+PRODUCT_VERSION_MAINTENANCE = 0.4
 ifdef TWISTED_BUILD_EXTRA
     TWISTED_POSTFIX := -$(TWISTED_BUILD_EXTRA)
 endif
