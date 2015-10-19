@@ -8933,7 +8933,7 @@
       mcc="310"
       mnc="260"
       apn="fast.t-mobile.com"
-      type="default,supl"
+      type="default,supl,dun"
       protocol="IPV6"
       roaming_protocol="IP"
       mtu="1440"
