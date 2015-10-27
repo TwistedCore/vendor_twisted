@@ -1,77 +1,78 @@
-# Copyright (C) 2014-2015 The SaberMod Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+# Written for UBER toolchains
+# Find host os
 
-# Written for SaberMod toolchains
-# TARGET_SM_AND can be set before this file to override the default of gcc 4.8 for ROM.
-# This is to avoid hardcoding the gcc versions for the ROM and kernels.
+# Set GCC colors
+export GCC_COLORS := 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
- TARGET_SM_AND := $(TARGET_GCC_VERSION)
- TARGET_SM_KERNEL := $(TARGET_GCC_VERSION_ARM)
+UNAME := $(shell uname -s)
 
- # Set GCC colors
- export GCC_COLORS := 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+ifeq (Linux,$(UNAME))
+  HOST_OS := linux
+endif
 
- # Find host os
- UNAME := $(shell uname -s)
+ifeq (linux,$(HOST_OS))
+ifeq (arm,$(TARGET_ARCH))
+# Path to toolchain
+AND_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-$(TARGET_GCC_VERSION)
+AND_TC_VERSION := $(shell $(AND_TC_PATH)/bin/arm-linux-androideabi-gcc --version 2>&1)
+AND_TC_VERSION_NUMBER := $(shell $(AND_TC_PATH)/bin/arm-linux-androideabi-gcc -dumpversion 2>&1)
 
- HOST_OS := linux
+# Find strings in version info
+ifneq ($(filter (UBERTC%),$(AND_TC_VERSION)),)
+AND_TC_NAME := UBERTC
+else
+AND_TC_NAME := GCC
+endif
 
- TARGET_ARCH_LIB_PATH := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-$(TARGET_SM_AND)/lib
- export TARGET_ARCH_LIB_PATH := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-$(TARGET_SM_AND)/lib
+AND_TC_DATE := $(filter 20150% 20151% ,$(AND_TC_VERSION))
+ifeq ($(AND_TC_DATE),)
+	AND_TC_DATE := $(filter 2014% ,$(AND_TC_VERSION))
+endif
 
- # Path to ROM toolchain
- SM_AND_PATH := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-$(TARGET_SM_AND)
- SM_AND := $(shell $(SM_AND_PATH)/bin/arm-linux-androideabi-gcc --version)
-
- # Find strings in version info
- SM_AND_NAME := $(filter %sabermod,$(SM_AND))
- SM_AND_DATE := $(filter 20140% 20141% 20150% 20151%,$(SM_AND))
- SM_AND_STATUS := $(filter (release) (prerelease) (experimental),$(SM_AND))
- SM_AND_VERSION := $(SM_AND_NAME)-$(SM_AND_DATE)-$(SM_AND_STATUS)
-
- # Write version info to build.prop
- ifeq (5.1,$(TARGET_GCC_VERSION))
 ADDITIONAL_BUILD_PROPERTIES += \
-     ro.sm.android=$(SM_AND_NAME)-$(SM_AND_DATE)-(experimental)
- else
+    ro.sm.android=($(AND_TC_NAME)-$(AND_TC_VERSION_NUMBER))-$(AND_TC_DATE)
+
+ifneq ($(TARGET_GCC_VERSION_ARM),)
+KERNEL_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-$(TARGET_GCC_VERSION_ARM)
+else
+KERNEL_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-$(TARGET_GCC_VERSION)
+endif
+
+KERNEL_TC_VERSION := $(shell $(KERNEL_TC_PATH)/bin/arm-eabi-gcc --version 2>&1)
+KERNEL_TC_VERSION_NUMBER := $(shell $(KERNEL_TC_PATH)/bin/arm-eabi-gcc -dumpversion 2>&1)
+
+# Find strings in version info
+ifneq ($(filter (UBERTC%),$(KERNEL_TC_VERSION)),)
+KERNEL_TC_NAME := UBERTC
+else
+KERNEL_TC_NAME := GCC
+endif
+
+KERNEL_TC_DATE := $(filter 20150% 20151% ,$(KERNEL_TC_VERSION))
+
+ifeq ($(KERNEL_TC_DATE),)
+	KERNEL_TC_DATE := $(filter 2014% ,$(KERNEL_TC_VERSION))
+endif
+
 ADDITIONAL_BUILD_PROPERTIES += \
-     ro.sm.android=$(SM_AND_VERSION)
- endif
+    ro.sm.kernel=($(KERNEL_TC_NAME)-$(KERNEL_TC_VERSION_NUMBER))-$(KERNEL_TC_DATE)
 
- # Path to kernel toolchain
- SM_KERNEL_PATH := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-$(TARGET_SM_KERNEL)
- SM_KERNEL := $(shell $(SM_KERNEL_PATH)/bin/arm-eabi-gcc --version)
+endif
 
- SM_KERNEL_NAME := $(filter %sabermod,$(SM_KERNEL))
- SM_KERNEL_DATE := $(filter 20140% 20141% 20150% 20151%,$(SM_KERNEL))
- SM_KERNEL_STATUS := $(filter (release) (prerelease) (experimental),$(SM_KERNEL))
- SM_KERNEL_VERSION := $(SM_KERNEL_NAME)-$(SM_KERNEL_DATE)-$(SM_KERNEL_STATUS)
+ifeq (arm64,$(TARGET_ARCH))
+# Path to toolchain
+UBER_AND_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/aarch64/aarch64-linux-android-4.9
+UBER_AND := $(shell $(UBER_AND_PATH)/bin/aarch64-linux-android-gcc --version)
 
- # Write version info to build.prop
- ifeq (5.1,$(TARGET_GCC_VERSION_ARM))
+# Find strings in version info
+ifneq ($(filter (UBERTC%),$(UBER_AND)),)
+UBER_AND_NAME := $(filter (UBERTC%),$(UBER_AND))
+UBER_AND_DATE := $(filter 20150% 20151%,$(UBER_AND))
+UBER_AND_VERSION := $(UBER_AND_NAME)-$(UBER_AND_DATE)
 ADDITIONAL_BUILD_PROPERTIES += \
-     ro.sm.kernel=$(SM_KERNEL_NAME)-$(SM_KERNEL_DATE)-(experimental)
- else
-ADDITIONAL_BUILD_PROPERTIES += \
-     ro.sm.kernel=$(SM_KERNEL_VERSION)
- endif
-
- # Add extra libs for the compilers to use
- export LD_LIBRARY_PATH := $(TARGET_ARCH_LIB_PATH):$(LD_LIBRARY_PATH)
- export LIBRARY_PATH := $(TARGET_ARCH_LIB_PATH):$(LIBRARY_PATH)
-
+    ro.sm.android=$(UBER_AND_VERSION)
+endif
+endif
 
 ifeq (true,$(STRICT_ALIASING))
 OPT1 := (strict)
@@ -101,4 +102,5 @@ GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.sm.flags=$(GCC_OPTIMIZATION_LEVELS)
-  endif
+endif
+endif
