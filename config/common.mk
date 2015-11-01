@@ -58,7 +58,7 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     LayersManager \
     LMT \
-    SlimOTA
+    TwistedProject
 
 # APN list
 PRODUCT_COPY_FILES += \
@@ -103,7 +103,7 @@ TWISTED_MOD_VERSION := Twisted-$(TWISTED_BUILD)-$(TWISTED_BUILD_TYPE).$(PRODUCT_
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
-    twisted.ota.version=$(PRODUCT_VERSION_MAJOR)-$(TWISTED_POSTFIX) \
+    twisted.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
     ro.twisted.version=$(TWISTED_VERSION) \
     ro.modversion=$(TWISTED_MOD_VERSION) \
     ro.twisted.buildtype=$(TWISTED_BUILD_TYPE)
