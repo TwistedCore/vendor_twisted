@@ -1,4 +1,5 @@
-#add_lunch_combo twisted_angler-user
+add_lunch_combo twisted_angler-user
+add_lunch_combo twisted_angler-userdebug
 #add_lunch_combo twisted_bullhead-user
 add_lunch_combo twisted_flo-user
 add_lunch_combo twisted_flo-userdebug
