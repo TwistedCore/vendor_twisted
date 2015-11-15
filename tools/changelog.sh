@@ -1,43 +1,37 @@
 #!/bin/sh
 
+# Exports
 . $ANDROID_BUILD_TOP/vendor/twisted/tools/colors
 
-CURRENT_DATE=`date +%Y%m%d`
-PREVIOUS_DATE=`date +%s -d "1 day ago"`
-LAST_DATE=`sed -n -e'/ro.build.date.utc/s/^.*=//p' $ANDROID_BUILD_TOP/last_build.prop`
+export Changelog=Changelog.txt
 
-if [ -z "$LAST_DATE" ]; then
-    WORKING_DATE=${PREVIOUS_DATE}
-else
-    WORKING_DATE=${LAST_DATE}
+if [ -f $Changelog ];
+then
+	rm -f $Changelog
 fi
 
-CHANGELOG=$OUT/system/etc/changelog.txt
+touch $Changelog
 
-# Remove existing changelog
-file="$CHANGELOG"
-if [ -f "$file" ]; then
-    echo ${CL_CYN}"Removing existing ${CHANGELOG}"${CL_RST}
-    rm $CHANGELOG;
-fi
+echo ${bldppl}"Generating changelog..."${txtrst}
 
-# Find the directories to log
-find $ANDROID_BUILD_TOP -name .git | sed 's/\/.git//g' | sed 'N;$!P;$!D;$d' | while read line
+for i in $(seq 7);
 do
-    cd $line
-    log=$(git log --pretty="%an - %s" --no-merges --since=$WORKING_DATE --date-order)
-    project=$(git remote -v | head -n1 | awk '{print $2}' | sed 's/.*\///' | sed 's/\.git//')
-    if [ ! -z "$log" ]; then
-        # Write the changelog
-        echo "Project name: $project" >> $CHANGELOG
-        echo "$log" | while read line
-        do
-             echo "  *$line" >> $CHANGELOG
-        done
-        echo "" >> $CHANGELOG
-    fi
+export After_Date=`date --date="$i days ago" +%m-%d-%Y`
+k=$(expr $i - 1)
+	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
+
+	# Line with after --- until was too long for a small ListView
+	echo '=======================' >> $Changelog;
+	echo  "     "$Until_Date       >> $Changelog;
+	echo '======================='	>> $Changelog;
+	echo >> $Changelog;
+
+	# Cycle through every repo to find commits between 2 dates
+	repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' >> $Changelog
+	echo >> $Changelog;
 done
 
-cp $CHANGELOG $ANDROID_BUILD_TOP/Changelog_${CURRENT_DATE}.txt
+sed -i 's/project/   */g' $Changelog
 
-exit 0
+cp $Changelog $OUT/system/etc/
+cp $Changelog $OUT/
