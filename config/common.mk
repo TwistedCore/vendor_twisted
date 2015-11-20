@@ -38,10 +38,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Stk
 
-# media effects
+# Camera Effects
+ifneq ($(filter twisted_flounder twisted_hammerhead twisted_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES +=  \
-    vendor/twisted/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/twisted/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+    vendor/twisted/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/twisted/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif
 
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
@@ -51,13 +53,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     LockClock \
     Launcher3 \
-    Layersbackup \
     AdAway \
     Terminal \
     Busybox \
     KernelAdiutor \
     LayersManager \
-    LMT \
     TwistedProject
 
 # APN list
