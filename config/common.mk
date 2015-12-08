@@ -86,14 +86,14 @@ PRODUCT_COPY_FILES += \
     vendor/twisted/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Versioning System
-PRODUCT_VERSION_MAJOR = 6.0.0
+PRODUCT_VERSION_MAJOR = 6.0.1
 PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = 0.8
+PRODUCT_VERSION_MAINTENANCE = 1.0
 ifdef TWISTED_BUILD_EXTRA
     TWISTED_POSTFIX := -$(TWISTED_BUILD_EXTRA)
 endif
 ifndef TWISTED_BUILD_TYPE
-    TWISTED_BUILD_TYPE := alpha
+    TWISTED_BUILD_TYPE := beta
     TWISTED_POSTFIX := $(shell date +"%Y%m%d")
 endif
 
