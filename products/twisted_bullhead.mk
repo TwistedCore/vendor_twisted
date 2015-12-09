@@ -28,5 +28,5 @@ PRODUCT_MANUFACTURER := LGE
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:5.1.1/LVY48C/1914015:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 5.1.1 LVY48C 1914015 release-keys"
+    BUILD_FINGERPRINT=google/bullhead/bullhead:6.0.1/MMB29K/2419427:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 6.0.1 MMB29K 2419427 release-keys"
