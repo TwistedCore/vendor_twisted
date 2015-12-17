@@ -58,7 +58,8 @@ PRODUCT_PACKAGES += \
     Busybox \
     KernelAdiutor \
     LayersManager \
-    TwistedProject
+    TwistedProject \
+    LMT
 
 # APN list
 PRODUCT_COPY_FILES += \
