@@ -59,7 +59,6 @@ PRODUCT_PACKAGES += \
     Busybox \
     KernelAdiutor \
     LayersManager \
-    TwistedProject \
     LMT
 
 # APN list
@@ -90,7 +89,7 @@ PRODUCT_COPY_FILES += \
 # Versioning System
 PRODUCT_VERSION_MAJOR = 6.0.1
 PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = 1.0
+PRODUCT_VERSION_MAINTENANCE = 2.0
 ifdef TWISTED_BUILD_EXTRA
     TWISTED_POSTFIX := -$(TWISTED_BUILD_EXTRA)
 endif
