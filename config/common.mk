@@ -55,6 +55,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     Launcher3 \
     AdAway \
+    SlimOTA \
     Terminal \
     Busybox \
     KernelAdiutor \
@@ -73,7 +74,11 @@ PRODUCT_COPY_FILES += \
 # init.d script support
 PRODUCT_COPY_FILES += \
     vendor/twisted/prebuilt/bin/sysinit:system/bin/sysinit
-
+    
+# twisted-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/twisted/prebuilt/bin/init.twisted.rc:root/init.twisted.rc
+    
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/twisted/prebuilt/addon.d/50-twisted.sh:system/addon.d/50-twisted.sh \
