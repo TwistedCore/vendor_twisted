@@ -59,7 +59,8 @@ PRODUCT_PACKAGES += \
     Terminal \
     KernelAdiutor \
     LayersManager \
-    LMT
+    LMT \
+    Gallery2
 
 # APN list
 PRODUCT_COPY_FILES += \
