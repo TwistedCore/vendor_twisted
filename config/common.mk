@@ -60,7 +60,8 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     LayersManager \
     LMT \
-    Gallery2
+    Gallery2 \
+    Browser
 
 # APN list
 PRODUCT_COPY_FILES += \
