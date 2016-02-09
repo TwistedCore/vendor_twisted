@@ -61,7 +61,8 @@ PRODUCT_PACKAGES += \
     LayersManager \
     LMT \
     Gallery2 \
-    Browser
+    Browser \
+    TwistedAbout
 
 # APN list
 PRODUCT_COPY_FILES += \
