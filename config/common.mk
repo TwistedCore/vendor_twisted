@@ -52,16 +52,17 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    LockClock \
-    Launcher3 \
     AdAway \
-    SlimOTA \
-    Terminal \
+    Browser \
+    Busybox \
+    Gallery2 \
     KernelAdiutor \
+    Launcher3 \
     LayersManager \
     LMT \
-    Gallery2 \
-    Browser \
+    LockClock \
+    SlimOTA \
+    Terminal \
     TwistedAbout
 
 # APN list
