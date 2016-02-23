@@ -124,3 +124,9 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.sm.flags=$(GCC_OPTIMIZATION_LEVELS)
 endif
 endif
+
+DTC_PATH := prebuilts/clang/linux-x86/host/$(TARGET_DRAGONTC_VERSION)
+DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
+
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.dtc.version=$(DTC_VER)
