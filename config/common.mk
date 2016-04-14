@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     LayersManager \
     LMT \
     LockClock \
-    SelinuxPlugin \
     SlimOTA \
     Terminal \
     TwistedAbout
