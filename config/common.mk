@@ -79,11 +79,9 @@ PRODUCT_COPY_FILES += \
     
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/twisted/prebuilt/addon.d/50-twisted.sh:system/addon.d/50-twisted.sh \
-    vendor/twisted/prebuilt/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/twisted/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/twisted/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/twisted/prebuilt/etc/backup.conf:system/etc/backup.conf
+    vendor/twisted/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/twisted/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/twisted/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
 
 # Bootanimation support
 PRODUCT_COPY_FILES += \
