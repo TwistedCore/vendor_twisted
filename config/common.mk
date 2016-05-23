@@ -61,7 +61,8 @@ PRODUCT_PACKAGES += \
     LMT \
     SlimOTA \
     Terminal \
-    TwistedAbout
+    TwistedAbout \
+    WallpaperPicker
 
 # APN list
 PRODUCT_COPY_FILES += \
