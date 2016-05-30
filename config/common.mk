@@ -107,7 +107,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     twisted.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
     ro.twisted.version=$(TWISTED_VERSION) \
     ro.modversion=$(TWISTED_MOD_VERSION) \
-    ro.twisted.buildtype=$(TWISTED_BUILD_TYPE)
+    ro.twisted.buildtype=$(TWISTED_BUILD_TYPE) \
+    twisted.build.version=$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)
 
 FINISHER_SCRIPT := vendor/twisted/tools/finisher
 SQUISHER_SCRIPT := vendor/twisted/tools/squisher
