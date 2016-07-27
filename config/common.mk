@@ -20,7 +20,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1 \
     ro.build.selinux=1 \
-    ro.adb.secure=1
+    ro.adb.secure=1 \
+    ro.substratum.recreate=true
 
 # Nova Launcher
 #PRODUCT_COPY_FILES += \
