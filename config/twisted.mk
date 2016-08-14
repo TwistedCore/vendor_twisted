@@ -107,24 +107,9 @@ endif
 ifeq (true,$(CLANG_O3))
   OPT5 := (clang_O3)
 endif
-
-ifeq (true,$(USE_O3_OPTIMIZATIONS))
-OPT6 := (O3)
-endif
-
-ifeq (true,$(CORTEX_TUNINGS))
-OPT7 := (CORTEX)
-endif
-
-GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)
+GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.sm.flags=$(GCC_OPTIMIZATION_LEVELS)
 endif
 endif
-
-DTC_PATH := prebuilts/clang/linux-x86/host/$(TARGET_DRAGONTC_VERSION)
-DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
-
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.dtc.version=$(DTC_VER)
