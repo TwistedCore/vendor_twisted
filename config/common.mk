@@ -64,6 +64,12 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     masquerade
 
+## Extra overlay packages for day night theming
+include vendor/slim/overlays/Android.mk
+
+PRODUCT_PACKAGES += \
+    GooglePackageInstallerOverlay
+
 # APN list
 PRODUCT_COPY_FILES += \
     vendor/twisted/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
