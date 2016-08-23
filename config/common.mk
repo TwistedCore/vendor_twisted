@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
     masquerade
 
 ## Extra overlay packages for day night theming
-include vendor/slim/overlays/Android.mk
+include vendor/twisted/overlays/Android.mk
 
 PRODUCT_PACKAGES += \
     GooglePackageInstallerOverlay
