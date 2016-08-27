@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
 
 # Twisted Core-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/twisted/prebuilt/etc/init.puretwisted.rc:root/init.puretwisted.rc
+    vendor/twisted/prebuilt/etc/init.twisted.rc:root/init.twisted.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
