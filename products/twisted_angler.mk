@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2016 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Include Pure Nexus telephony configuration
+include vendor/twisted/configs/twisted_phone.mk
+
 # Inherit AOSP device configuration for angler
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
-
-# Inherit common product files
-$(call inherit-product, vendor/twisted/config/common.mk)
 
 # Override AOSP build properties
 PRODUCT_NAME := twisted_angler
@@ -28,5 +28,5 @@ PRODUCT_MANUFACTURER := Huawei
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:6.0.1/MHC19I/2590160:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 6.0.1 MHC19I 2590160 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:7.0/NRD90M/3085278:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 7.0 NRD90M 3085278 release-keys"
