@@ -23,6 +23,12 @@ PRODUCT_PACKAGES += \
     Stk \
     CellBroadcastReceiver
 
+
+# Extra Optional packages
+PRODUCT_PACKAGES += \
+    LMT \
+    masquerade
+
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
