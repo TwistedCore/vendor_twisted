@@ -15,13 +15,13 @@
 # Add Stock Lollipop bootanimation based on device
 ifneq ($(filter twisted_angler,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/twisted/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+        vendor/twisted/prebuilt/bootanimation/bootanimation_1080.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter twisted_bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/twisted/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
+        vendor/twisted/prebuilt/bootanimation/bootanimation_1080.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter twisted_shamu,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/twisted/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
+        vendor/twisted/prebuilt/bootanimation/bootanimation_1080.zip:system/media/bootanimation.zip
 endif

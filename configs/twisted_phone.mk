@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     LMT \
-    masquerade
+    masquerade \
+    Terminal
 
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
