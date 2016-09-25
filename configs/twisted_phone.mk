@@ -18,6 +18,11 @@ include vendor/twisted/configs/twisted_main.mk
 include vendor/twisted/configs/system_additions.mk
 include vendor/twisted/configs/version.mk
 
+#Google Dialer & Contacts
+ifeq ($(DISABLE_GOOGLE),)
+$(call inherit-product-if-exists, vendor/google/googlevendor.mk)
+endif
+
 # Telephony packages
 PRODUCT_PACKAGES += \
     Stk \
@@ -28,7 +33,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LMT \
     masquerade \
-    Terminal
+    Terminal\
+DeskClock\
+Calendar
 
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
