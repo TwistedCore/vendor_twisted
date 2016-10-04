@@ -34,8 +34,7 @@ PRODUCT_PACKAGES += \
     LMT \
     masquerade \
     Terminal\
-DeskClock\
-Calendar
+DeskClock
 
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
