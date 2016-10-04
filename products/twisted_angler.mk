@@ -18,15 +18,15 @@ include vendor/twisted/configs/twisted_phone.mk
 # Inherit AOSP device configuration for angler
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
-# Override AOSP build properties
+# Setup device specific product configuration.
 PRODUCT_NAME := twisted_angler
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Google
 PRODUCT_DEVICE := angler
 PRODUCT_MODEL := Nexus 6P
-PRODUCT_MANUFACTURER := Huawei
+PRODUCT_MANUFACTURER := huawei
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:7.0/NRD90U/3155372:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 7.0 NRD90U 3155372 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:7.0/NBD90X/3254009:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 7.0 NBD90X 3254009 release-keys"
