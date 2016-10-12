@@ -28,13 +28,16 @@ PRODUCT_PACKAGES += \
     Stk \
     CellBroadcastReceiver
 
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
+    DeskClock \
     LMT \
     masquerade \
-    Terminal\
-DeskClock
+    Terminal
 
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
