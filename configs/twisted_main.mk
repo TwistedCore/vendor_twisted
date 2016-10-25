@@ -16,6 +16,9 @@
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/twisted/overlay/common
 
+# include definitions for SDCLANG
+include vendor/twisted/sdclang/sdclang.mk
+
 # Main Required Packages
 PRODUCT_PACKAGES += \
     Launcher3 \

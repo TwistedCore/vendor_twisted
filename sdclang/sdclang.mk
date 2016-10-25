@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2011 The Android Open-Source Project
+# Copyright (C) 2016 ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# WARNING: Everything listed here will be built on ALL platforms,
-# including x86, the emulator, and the SDK.  Modules must be uniquely
-# named (liblights.panda), and must build everywhere, or limit themselves
-# to only building on ARM if they include assembly. Individual makefiles
-# are responsible for having their own logic, for fine-grained control.
+SDCLANG ?= true
+SDCLANG_FORCED ?= false
 
-LOCAL_PATH := $(call my-dir)
+SDCLANG_PATH := prebuilts/clang/host/linux-x86/sdclang-3.8/bin
 
-# Include UBER common configuration
-include vendor/twisted/configs/uber.mk
+SDCLANG_LTO_DEFS := vendor/twisted/sdclang/sdllvm-lto-defs.mk
 
+SDCLANG_COMMON_FLAGS := -O3
