@@ -15,7 +15,7 @@ then
    OUT_TARGET_HOST=darwin-x86
    XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
 else
-   echo -e $red"ERROR: unknown/unsupported host OS!"$txtrst
+   echo -e ${CL_RED}"ERROR: unknown/unsupported host OS!"${CL_RST}
    exit 1
 fi
 
