@@ -23,10 +23,6 @@ PRODUCT_PACKAGES += \
     Stk \
     CellBroadcastReceiver
 
-# Busybox
-PRODUCT_PACKAGES += \
-    Busybox
-
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     LMT \
