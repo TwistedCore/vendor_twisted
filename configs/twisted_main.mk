@@ -24,3 +24,6 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     LiveWallpapersPicker
 
+# Include explicitly to work around Facelock issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
