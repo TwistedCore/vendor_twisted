@@ -25,7 +25,6 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    LMT \
     masquerade \
     Terminal
 
