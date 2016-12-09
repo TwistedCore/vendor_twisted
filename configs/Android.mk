@@ -24,4 +24,3 @@ LOCAL_PATH := $(call my-dir)
 
 # Include UBER common configuration
 include vendor/twisted/configs/uber.mk
-
