@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The Pure Nexus Project
+# Copyright (C) 2016 Flash ROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,19 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Versioning System
-PRODUCT_VERSION_MAJOR = 7
-PRODUCT_VERSION_MINOR = 0.0
-PRODUCT_VERSION_MAINTENANCE = 2.0
-TWISTED_BUILD_TYPE =build
-
-TWISTED_POSTFIX := $(shell date +"%Y%m%d-%H%M")
-
-# Set all versions
-TWISTED_VERSION := $(TWISTED_BUILD_TYPE)-$(PRODUCT_VERSION_MAINTENANCE)
-TWISTED_MOD_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TWISTED_BUILD_TYPE)-$(PRODUCT_VERSION_MAINTENANCE)-$(TWISTED_POSTFIX)
+BUILD_TYPE := Build
+ROM_VERSION := 1.0
+ROM_NAME := twisted_core
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.twisted.version=$(TWISTED_VERSION) \
-    ro.modversion=$(TWISTED_MOD_VERSION)
+    ro.rom.version=$(BUILD_TYPE)-$(ROM_VERSION)
 
