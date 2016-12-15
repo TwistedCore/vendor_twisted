@@ -36,6 +36,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0
 
+# Pull in Prebuilt applications for phones
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
 
 # Squisher Location
 SQUISHER_SCRIPT := vendor/twisted/tools/squisher
