@@ -14,7 +14,7 @@
 # limitations under the License.
 
 BUILD_TYPE := Build
-ROM_VERSION := 1.0
+ROM_VERSION := 1.2
 ROM_NAME := twisted_core
 
 PRODUCT_PROPERTY_OVERRIDES += \
