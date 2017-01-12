@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     masquerade \
+    OmniStyle \
     Terminal
 
 # Allow tethering without provisioning app
