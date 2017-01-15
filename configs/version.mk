@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-BUILD_TYPE := Build
-ROM_VERSION := 1.4
-ROM_NAME := twisted_core
+BUILD_TYPE := Official
+ROM_VERSION := 2.0
+ROM_NAME := Twisted_Core
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rom.version=$(BUILD_TYPE)-$(ROM_VERSION)
+    ro.rom.version=$(ROM_NAME)-(BUILD_TYPE)-$(ROM_VERSION)
 
