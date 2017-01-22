@@ -19,4 +19,4 @@ SDCLANG_PATH := prebuilts/clang/host/linux-x86/sdclang-3.8/bin
 
 SDCLANG_LTO_DEFS := vendor/twisted/sdclang/sdllvm-lto-defs.mk
 
-SDCLANG_COMMON_FLAGS := -O3
+SDCLANG_COMMON_FLAGS := -O3 -fvectorize-loops
