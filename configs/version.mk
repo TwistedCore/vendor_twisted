@@ -18,5 +18,5 @@ ROM_VERSION := 2.0
 ROM_NAME := Twisted_Core
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rom.version=$(ROM_NAME)-(BUILD_TYPE)-$(ROM_VERSION)
+    ro.rom.version=$(ROM_NAME)-$(BUILD_TYPE)-$(ROM_VERSION)
 
